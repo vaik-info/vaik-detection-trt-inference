@@ -11,6 +11,8 @@ Inference with the TensorRT model of the Tensorflow Object Detection API and out
 - tensorrt by docker image
   - g4dn.xlarge
     - nvcr.io/nvidia/tensorrt:22.10-py3
+  - jetson xavier nx
+    - nvcr.io/nvidia/l4t-tensorrt:r8.4.1-runtime
 
 ## Install
 
