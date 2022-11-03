@@ -184,7 +184,7 @@ class TrtModel:
             filter_pred['detection_boxes'] = pred['detection_boxes'][mask]
             filter_pred['detection_classes'] = pred['detection_classes'][mask]
             filter_pred['detection_scores'] = pred['detection_scores'][mask]
-            filter_pred['num_detections'] = pred['num_detections']
+            filter_pred['num_detections'] = int(filter_pred['detection_classes'].shape[0])
             filter_pred_list.append(filter_pred)
         return filter_pred_list
 
