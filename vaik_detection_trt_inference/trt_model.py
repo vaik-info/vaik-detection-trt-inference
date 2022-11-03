@@ -72,7 +72,8 @@ class TrtModel:
         raw_pred = self.__inference(resized_image_array)
         filter_pred_list = self.__raw_pred_parse(raw_pred)
         filter_pred_list = self.__filter_score(filter_pred_list, score_th)
-        filter_pred_list = self.__filter_nms(filter_pred_list, nms_th)
+        if nms_th is not None:
+            filter_pred_list = self.__filter_nms(filter_pred_list, nms_th)
         objects_dict_list = self.__output_parse(filter_pred_list, resized_scales_list,
                                                 [input_image.shape[0:2] for input_image in input_image_list])
         return objects_dict_list, raw_pred
