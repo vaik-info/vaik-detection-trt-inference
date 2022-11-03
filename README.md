@@ -8,16 +8,11 @@ Inference with the TensorRT model of the Tensorflow Object Detection API and out
 
 ## Operation confirmation environment
 
-|     instance     |                          machine image                          | export docker image | inference docker image |
-|:----------------:|:---------------------------------------------------------------:|:------------:|:------------:|
- |   g4dn.xlarge    | Deep Learning AMI GPU TensorFlow 2.10.0 (Ubuntu 20.04) 20220914 |nvcr.io/nvidia/tensorflow:22.10-tf2-py3|nvcr.io/nvidia/tensorflow:22.10-tf2-py3|
-| Jetson Xavier NX |                          Jetpack 5.0.2                          |nvcr.io/nvidia/l4t-tensorflow:r35.1.0-tf2.9-py3||
-
 - tensorrt by docker image
   - g4dn.xlarge
     - nvcr.io/nvidia/tensorrt:22.10-py3
   - jetson xavier nx
-    - nvcr.io/nvidia/l4t-tensorrt:r8.4.1-runtime
+    - nvcr.io/nvidia/l4t-tensorflow:r35.1.0-tf2.9-py3
 
 ## Install
 
