@@ -46,39 +46,39 @@ objects_dict_list_list, raw_pred = model.inference([image], score_th=0.2, nms_th
 ```text
 
 [
-[
-  {
-    'name': 'eight',
-    'pose': 'Unspecified',
-    'truncated': 0,
-    'difficult': 0,
-    'bndbox': {
-      'xmin': 564,
-      'ymin': 100,
-      'xmax': 611,
-      'ymax': 185
-    },
-    'score': 0.9445509314537048
-  },
-  ・・・
-  {
-    'name': 'four',
-    'pose': 'Unspecified',
-    'truncated': 0,
-    'difficult': 0,
-    'bndbox': {
-      'xmin': 40,
-      'ymin': 376,
-      'xmax': 86,
-      'ymax': 438
-    },
-    'score': 0.38432005047798157
-  }
-],
- ・・・
-     'score': 0.38432005047798157
-  }
-],
+    [
+      {
+        'name': 'eight',
+        'pose': 'Unspecified',
+        'truncated': 0,
+        'difficult': 0,
+        'bndbox': {
+          'xmin': 564,
+          'ymin': 100,
+          'xmax': 611,
+          'ymax': 185
+        },
+        'score': 0.9445509314537048
+      },
+      ・・・
+      {
+        'name': 'four',
+        'pose': 'Unspecified',
+        'truncated': 0,
+        'difficult': 0,
+        'bndbox': {
+          'xmin': 40,
+          'ymin': 376,
+          'xmax': 86,
+          'ymax': 438
+        },
+        'score': 0.38432005047798157
+      }
+    ],
+     ・・・
+         'score': 0.38432005047798157
+      }
+    ],
 ]
 ```
 
