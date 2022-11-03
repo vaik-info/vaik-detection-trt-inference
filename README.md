@@ -1,6 +1,7 @@
 # vaik-detection-trt-inference
 
-Inference with the TensorRT model of the Tensorflow Object Detection API and output the result as a dict in extended Pascal VOC format.
+Inference with the TensorRT model of the Tensorflow Object Detection API and output the result as a dict in extended
+Pascal VOC format.
 
 ## Example
 
@@ -9,10 +10,10 @@ Inference with the TensorRT model of the Tensorflow Object Detection API and out
 ## Operation confirmation environment
 
 - tensorrt by docker image
-  - g4dn.xlarge
-    - nvcr.io/nvidia/tensorrt:22.10-py3
-  - jetson xavier nx
-    - nvcr.io/nvidia/l4t-tensorflow:r35.1.0-tf2.9-py3
+    - g4dn.xlarge
+        - nvcr.io/nvidia/tensorrt:22.10-py3
+    - jetson xavier nx
+        - nvcr.io/nvidia/l4t-tensorflow:r35.1.0-tf2.9-py3
 
 ## Install
 
@@ -38,12 +39,13 @@ model = TrtModel(input_saved_model_path, classes)
 objects_dict_list_list, raw_pred = model.inference([image], score_th=0.2, nms_th=0.5)
 ```
 
-
 #### Output
 
 - objects_dict_list
 
 ```text
+
+[
 [
   {
     'name': 'eight',
@@ -72,10 +74,16 @@ objects_dict_list_list, raw_pred = model.inference([image], score_th=0.2, nms_th
     },
     'score': 0.38432005047798157
   }
+],
+ ・・・
+     'score': 0.38432005047798157
+  }
+],
 ]
 ```
 
 - raw_pred
+
 ```
 [array([[100],
        [100],
