@@ -1,4 +1,4 @@
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Union
 
 from PIL import Image
 import numpy as np
@@ -63,7 +63,8 @@ class TrtModel:
             else:
                 self.outputs.append(binding)
 
-    def inference(self, input_image_list: List[np.ndarray], score_th: float = 0.2, nms_th: float = 0.5) -> Tuple[
+    def inference(self, input_image_list: List[np.ndarray], score_th: float = 0.2, nms_th: Union[float, None] = 0.5) -> \
+    Tuple[
         List[Dict], Dict
     ]:
         resized_image_array, resized_scales_list = self.__preprocess_image_list(input_image_list,
