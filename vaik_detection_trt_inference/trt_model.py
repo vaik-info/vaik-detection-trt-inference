@@ -1,6 +1,5 @@
 from typing import List, Dict, Tuple
 
-import vaik_pascal_voc_rw_ex.pascal_voc_rw_ex
 from PIL import Image
 import numpy as np
 import tensorrt as trt
