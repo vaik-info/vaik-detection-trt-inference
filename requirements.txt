@@ -1,4 +1,3 @@
 Pillow>=9.1.1
 pycuda>=2020.1
 numpy>=1.23.4
-vaik-pascal-voc-rw-ex @ git+https://github.com/vaik-info/vaik-pascal-voc-rw-ex.git@644c9b53dcfa8a260a04fbfaf98ba25ee6a41d82
