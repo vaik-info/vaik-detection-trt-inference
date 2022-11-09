@@ -30,7 +30,7 @@ from PIL import Image
 
 from vaik_detection_trt_inference.trt_model import TrtModel
 
-input_saved_model_path = os.path.expanduser('~/output_trt_mode/model.trt')
+input_saved_model_path = os.path.expanduser('~/output_trt_model/model.trt')
 classes = ('zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine')
 image = np.asarray(
     Image.open(os.path.expanduser('~/.vaik-mnist-detection-dataset/valid/valid_000000000.jpg')).convert('RGB'))
